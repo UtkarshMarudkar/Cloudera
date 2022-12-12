@@ -119,7 +119,8 @@ $ sudo mkdir -p /var/www/html/cloudera-repos/cm6
 
 ----*** Download the Cloudera Manager Repo tarball ***----
 
-$ wget tarball        or make s3 bucket public and create iam role and give s3 access to instance through modify iam role
+$ wget tarball        or make s3 bucket public and create iam role and give s3 access to instance through modify iam role --aws s3 ls nmofbucket
+----aws s3 cp s3://nmofbucket/reop ~
 
 $ sudo tar xvfz cm6.3.3-ubuntu1604.tar.gz -C /var/www/html/cloudera-repos/cm6 --strip-components=1
 
