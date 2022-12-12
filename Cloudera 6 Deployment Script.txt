@@ -13,6 +13,7 @@ In seccurity group - Select "Default" security group
 
 Edit Deafult security group as below
 all traffic - your-ip/32
+all traffic - ipv4 anywhere
 
 
 -----*** SSH in to the instance you created ***-----
@@ -118,7 +119,7 @@ $ sudo mkdir -p /var/www/html/cloudera-repos/cm6
 
 ----*** Download the Cloudera Manager Repo tarball ***----
 
-$ wget tarball
+$ wget tarball        or make s3 bucket public and create iam role and give s3 access to instance through modify iam role
 
 $ sudo tar xvfz cm6.3.3-ubuntu1604.tar.gz -C /var/www/html/cloudera-repos/cm6 --strip-components=1
 
@@ -164,7 +165,7 @@ $ sudo service cloudera-scm-agent status
 
 ##### Setup custom CDH repository #####
  
-move 3 files except tar.gz
+move 3 files to /opt/cloudera/parcel-repo/ -----except tar.gz
 
 >> Download parcel,sha and manifest file and move them to Local parcel repository
 
