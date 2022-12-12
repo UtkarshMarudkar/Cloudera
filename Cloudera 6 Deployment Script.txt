@@ -185,6 +185,8 @@ $ cd
 
 sudo service cloudera-scm-server restart
 
+--- make 3 worker and three master node through ami---
+
 ## Login to CM web UI on 7180-http
                          7183-https
 
