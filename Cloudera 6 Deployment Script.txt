@@ -8,6 +8,8 @@ and upload in s3 bucket and make it public
 after this create iam role. after launching the instance user have to give access of s3 using iam role.
 
 Start a instance with minimum 8 GB ram (preferably m4.large)
+ubuntu -   ami-056db1277deef2218
+
 
 In seccurity group - Select "Default" security group
 
